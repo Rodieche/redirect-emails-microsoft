@@ -41,29 +41,15 @@ Before running this script, ensure you have the following:
 
 ## Installation
 
-1.  Save the provided PowerShell script code as a `.ps1` file (e.g., `ConfigureMailRuleGUI.ps1`) on your local machine.
+1.  Save the provided EXE file on your local machine.
 
 ## How to Run
 
-1.  Open **PowerShell as Administrator**. You can do this by searching for "PowerShell" in the Start menu, right-clicking, and selecting "Run as administrator".
+1.  Open the file as Administrator, right-clicking, and selecting "Run as administrator".
 
-2.  Navigate to the directory where you saved the `.ps1` file using the `cd` command. For example, if you saved it in your Documents folder:
+2.  A Windows Form window titled "Configure Mail Forward/Copy Rule" will appear.
 
-    ```
-    cd C:\Users\YourUsername\Documents
-
-    ```
-
-3.  Execute the script by typing the file name preceded by `.\`:
-
-    ```
-    .\ConfigureMailRuleGUI.ps1
-
-    ```
-
-4.  A Windows Form window titled "Configure Mail Forward/Copy Rule" will appear.
-
-5.  Fill in the required fields:
+3.  Fill in the required fields:
 
     * **Source Mailbox:** The email address of the mailbox whose incoming messages the rule should apply to.
 
@@ -75,11 +61,11 @@ Before running this script, ensure you have the following:
 
     * **Optional: Expiry Date and Time:** Check the box and select a date and time if you want the rule to automatically expire.
 
-6.  Click the "Create Rule" button.
+4.  Click the "Create Rule" button.
 
-7.  If you are not already connected to Exchange Online in that PowerShell session, a Microsoft 365 sign-in window will appear. Enter your credentials for an account with the necessary permissions.
+5.  If you are not already connected to Exchange Online in that PowerShell session, a Microsoft 365 sign-in window will appear. Enter your credentials for an account with the necessary permissions.
 
-8.  The "Status" label at the bottom of the form will update to show the progress (Connecting, Creating Rule, Success, or Error).
+6.  The "Status" label at the bottom of the form will update to show the progress (Connecting, Creating Rule, Success, or Error).
 
 ## Troubleshooting
 
